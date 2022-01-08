@@ -43,6 +43,8 @@ header > div > div {
     background-size: cover;
 }
 
+/* Indicateurs du sliders */
+
 .carousel-indicators * {
     opacity: 0.9 !important;
 }
@@ -52,4 +54,17 @@ header > div > div {
 }
 .carousel-indicators .active {
     background-color: #808080;
+}
+
+.carousel-control-next-icon {
+    background-image: url("../assets/icones/slider-suivant.svg") !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("../assets/icones/slider-precedent.svg") !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    height: 75px;
+    width: 75px;
 }
