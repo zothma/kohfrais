@@ -1,0 +1,55 @@
+/* slider */
+header > div > div {
+    height: 580px;
+}
+
+#slide1 {
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+#slide1 p {
+    font-family: "Open Sans SemiBold", sans-serif;
+    font-size: 1.8rem;
+}
+
+#slide1 > div:first-child {
+    /* Fond de la slide */
+    position: absolute;
+    z-index: -1;
+    background-image: url("../image/bac_glace.jpg");
+    background-size: cover;
+    filter: blur(4px);
+
+    /* Enlever les bords blancs dus au flou */
+    height: calc(100% + 8px);
+    width: calc(100% + 8px);
+    left: -4px;
+    top: -4px;
+}
+
+#slide1 > div:last-child {
+    background-color: #00000020;
+}
+
+#slide2 > div > div:first-child {
+    background-image: url("../image/coupe_individuelle.jpg");
+    background-size: cover;
+}
+
+#slide3 > div > div:last-child {
+    background-image: url("../image/personne_farine.jpeg");
+    background-size: cover;
+}
+
+.carousel-indicators * {
+    opacity: 0.9 !important;
+}
+
+.carousel-indicators :not(.active) {
+    background-color: #DDDDDD;
+}
+.carousel-indicators .active {
+    background-color: #808080;
+}

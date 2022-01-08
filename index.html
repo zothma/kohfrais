@@ -6,6 +6,7 @@
     <title>Accueil - KohFrais</title>
     <link rel="stylesheet" href="style/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/accueil.css">
 </head>
 
 <body>
@@ -24,37 +25,66 @@
         </header>
     
         <main>
-            <header>
-                <div id="slide1">
-                    <!-- Première slide -->
-                    <!-- L'image sera en fond en CSS -->
-                    <h1>L'art des produits glacés</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Platea dictum in congue amet donec egestas.
-                        Aliquet ipsum eleifend sit eget faucibus sed pharetra nisi, enim.</p>
-                </div>
-                <div id="slide2">
-                    <!-- Deuxième slide, avec d'une part l'image et d'autre part le contenu -->
-                    <div></div>
-                    <div>
-                        <h1>Deux Gammes</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta cursus tortor placerat ut aliquam.
-                            Orci nulla nunc ut sit facilisis.</p>
-                    </div>
-                </div>
-                <div id="slide3">
-                    <!-- Troisième slide, avec d'une part le contenu et d'autre part l'image -->
-                    <div>
-                        <h1>L'accent mis sur la qualité</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat, enim et nisl, in ultricies.
-                        </p>
-                    </div>
-                </div>
-                <div>
+            <header id="carousel_accueil" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators d-none d-lg-flex">
                     <!-- Indicateurs de slide -->
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <button type="button" data-bs-target="#carousel_accueil" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel_accueil" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel_accueil" data-bs-slide-to="2" aria-label="Slide 2"></button>
                 </div>
+
+                <div class="carousel-inner">
+                    <div id="slide1" class="carousel-item active">
+                        <!-- Première slide -->
+                        <div><!-- Image de fond --></div>
+                        <div class="w-100 h-100 d-flex flex-column justify-content-center">
+                            <!-- Les lignes sont centrées verticalement -->
+                            <div class="row">
+                                <h1 class="col-10 offset-1">L'art des produits glacés</h1>
+                            </div>
+                            <div class="row">
+                                <p class="col-8 offset-3 text-end">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Platea dictum in congue amet donec egestas.
+                                    Aliquet ipsum eleifend sit eget faucibus sed pharetra nisi, enim.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item">
+                        <!-- Deuxième slide, avec d'une part l'image et d'autre part le contenu -->
+                        <div class="row h-100">
+                            <div class="col-6 col-lg-7 h-100"></div>
+                            <div class="col-6 col-lg-5 h-100 d-flex flex-column justify-content-evenly">
+                                <h1 class="px-4">Deux Gammes</h1>
+                                <p class="px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta cursus tortor placerat ut aliquam.
+                                    Orci nulla nunc ut sit facilisis.</p>
+                                <a href="#" class="px-4">Découvrir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item">
+                        <!-- Troisième slide, avec d'une part le contenu et d'autre part l'image -->
+                        <div class="row h-100">
+                            <div class="col-6 col-lg-5 h-100 d-flex flex-column justify-content-evenly">
+                                <h1 class="px-4">L'accent mis sur la qualité</h1>
+                                <p class="px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat, enim et nisl, in ultricies.
+                                </p>
+                            </div>
+                            <div class="col-6 col-lg-7 h-100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boutons de navigation de slide dans les petites tailles d'écran -->
+                <button class="carousel-control-prev d-lg-none" type="button" data-bs-target="#carousel_accueil" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next d-lg-none" type="button" data-bs-target="#carousel_accueil" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                </button>
+
             </header>
     
             <article>
@@ -142,6 +172,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="script/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
