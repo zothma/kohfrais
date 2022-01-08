@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Open Sans Light";
+    src: url("../fonts/OpenSans-Light.woff") format("woff"),
+         url("../fonts/OpenSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url("../fonts/OpenSans-Regular.woff") format("woff"),
+         url("../fonts/OpenSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Open Sans SemiBold";
+    src: url("../fonts/OpenSans-SemiBold.woff") format("woff"),
+         url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Signika";
+    src: url("../fonts/Signika-Bold.woff") format("woff"),
+         url("../fonts/Signika-Bold.woff") format("woff2");
+}
+
+body {
+    font-family: "Open Sans Light", sans-serif;
+}
+
+strong, em {
+    font-family: "Open Sans SemiBold", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Signika", sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+    color: #343637;
+}
