@@ -20,6 +20,7 @@ header > div > div {
     z-index: -1;
     background-image: url("../image/bac_glace.jpg");
     background-size: cover;
+    background-position: center;
     filter: blur(4px);
 
     /* Enlever les bords blancs dus au flou */
@@ -36,11 +37,13 @@ header > div > div {
 #slide2 > div > div:first-child {
     background-image: url("../image/coupe_individuelle.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 #slide3 > div > div:last-child {
     background-image: url("../image/personne_farine.jpeg");
     background-size: cover;
+    background-position: center;
 }
 
 /* Indicateurs du sliders */
@@ -67,4 +70,19 @@ header > div > div {
 .carousel-control-next-icon, .carousel-control-prev-icon {
     height: 75px;
     width: 75px;
+}
+
+/* Zone de mide en avant */
+
+header + article img {
+    height: 120px;
+    width: 120px;
+}
+
+/* Point de rupture bootstrap md */
+@media screen and (max-width: 767px) {
+    header + article img {
+        height: 90px;
+        width: 90px;
+    }
 }
