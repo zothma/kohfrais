@@ -6,6 +6,7 @@
     <title>Glace à la vanille</title>
     <link rel="stylesheet" href="style/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="page_produit.css">
 </head>
 
 <body>
@@ -24,40 +25,67 @@
         </header>
 
         <main>
-            <h1>Notre glace à la vanille</h1>
-            <figure>
-                <img src="image/coupe_individuelle.jpg" alt="" title="" />
-                <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue semper lectus imperdiet
-                    elementum imperdiet facilisis congue non. Sit vulputate interdum nulla leo egestas.</figcaption>
-            </figure>
-            <h2>Disponibilité</h2>
-            <p>Disponible en bac de <strong>1 littre</strong> et de <strong>2 litres</strong></p>
-            <h2>Labels</h2>
-            <figure>
-                <img src="image/logo_bretagne.png" alt="" title="" />
-                <figcaption>Ingrédient produits en Bretagne</figcaption>
-            </figure>
-            <figure>
-                <img src="image/logo_ab.jpg" alt="" title="" />
-                <figcaption>Ingredients issus de l'agriculture biologique</figcaption>
-            </figure>
-            <h2>Ingredients</h2>
-            <figure>
-                <img src="image/lait.jpeg" alt="" title="" />
-                <figcaption>Lait</figcaption>
-            </figure>
-            <figure>
-                <img src="image/oeufs.jpeg" alt="" title="" />
-                <figcaption>Oeuf</figcaption>
-            </figure>
-            <figure>
-                <img src="image/sucre.jpg" alt="" title="" />
-                <figcaption>Sucre</figcaption>
-            </figure>
-            <figure>
-                <img src="image/vanille_sucre.webp" alt="" title="" />
-                <figcaption>Vanille</figcaption>
-            </figure>
+            <div>
+                <h1>Notre glace à la vanille</h1>
+                <figure id="Logo">
+                    <img src="assets/icones/ermine.svg" alt="" title="" />
+                </figure>
+                <figure id="Logo">
+                    <img src="assets/icones/feuille.svg" alt="" title="" />
+                </figure>
+                <div class="test">
+                    <!--figure>
+                        <img src="image/coupe_individuelle.jpg" alt="" title="" />
+                        <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue semper lectus
+                            imperdiet
+                            elementum imperdiet facilisis congue non. Sit vulputate interdum nulla leo egestas.
+                        </figcaption>
+                    </figure-->
+                </div>
+            </div>
+            <div>
+                <div class="p-2 bd-highlight">
+                    <h2>Ingredients</h2>
+                    <div class="text-center">
+                        <div class="d-flex justify-content-around">
+                            <figure>
+                                <img class="rounded-circle" src="image/lait.jpeg" alt="" title="" />
+                                <figcaption>Lait</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="rounded-circle" src="image/oeufs.jpeg" alt="" title="" />
+                                <figcaption>Oeuf</figcaption>
+                            </figure>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <figure>
+                                <img class="rounded-circle" src="image/sucre.jpg" alt="" title="" />
+                                <figcaption>Sucre</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="rounded-circle" src="image/vanille_sucre.webp" alt="" title="" />
+                                <figcaption>Vanille</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">
+                        <h2>Disponibilité</h2>
+                        <p>Disponible en bac de <strong>1 littre</strong> et de <strong>2 litres</strong></p>
+                        <h2>Labels</h2>
+                        <figure>
+                            <img src="image/logo_bretagne.png" alt="" title="" />
+                            <figcaption>Ingrédient produits en Bretagne</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="image/logo_ab.jpg" alt="" title="" />
+                            <figcaption>Ingredients issus de l'agriculture biologique</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer>
