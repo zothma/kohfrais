@@ -79,6 +79,24 @@ header + article img {
     width: 120px;
 }
 
+/* Zone des gammes */
+#gammes {
+    height: 1000px;
+    background-color: #FFE6D5;
+}
+
+#gammes div:first-child .w-50:first-child {
+    background-image: url("../image/chef_cuisine.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#gammes div:last-child .w-50:last-child {
+    background-image: url("../image/glace_plage.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
 /* Point de rupture bootstrap md */
 @media screen and (max-width: 767px) {
     header + article img {
