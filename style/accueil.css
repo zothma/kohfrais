@@ -81,17 +81,20 @@ header + article img {
 
 /* Zone des gammes */
 #gammes {
-    height: 1000px;
     background-color: #FFE6D5;
 }
 
-#gammes div:first-child .w-50:first-child {
+#gammes > div:first-child > div:first-child {
     background-image: url("../image/chef_cuisine.jpeg");
     background-size: cover;
     background-position: center;
 }
 
-#gammes div:last-child .w-50:last-child {
+#gammes > div > div {
+    width: 50%;
+}
+
+#gammes > div:last-child > div:last-child {
     background-image: url("../image/glace_plage.jpeg");
     background-size: cover;
     background-position: center;
@@ -102,5 +105,13 @@ header + article img {
     header + article img {
         height: 90px;
         width: 90px;
+    }
+
+    #gammes > div > div {
+        width: 100%;
+    }
+
+    #gammes {
+        height: auto;
     }
 }
