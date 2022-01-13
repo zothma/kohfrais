@@ -1,6 +1,6 @@
 /* slider */
-header > div > div {
-    height: 580px;
+main > header, main >header > div > div {
+    height: 60vh;
 }
 
 #slide1 {
