@@ -47,3 +47,22 @@ caption {
     color: black;
 }
 
+button div {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+button div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+button.collapsed div img:first-child {
+    display: none;
+}
+
+button:not(.collapsed) div img:last-child {
+    display: none;
+}
