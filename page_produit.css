@@ -9,12 +9,13 @@ img {
     height: 50px;
 }
 
-.test img
+
+.image-principale img
 {
     object-fit: cover;
     object-position: center;
-    width: 500px;
-    height: 300px;
+    width: 75%;
+    height: 400px;
 
 }
 
