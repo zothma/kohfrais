@@ -66,3 +66,9 @@ button.collapsed div img:first-child {
 button:not(.collapsed) div img:last-child {
     display: none;
 }
+
+@media screen and (max-width: 767px) {
+    table.w-75 {
+        width: 100%!important;
+    }
+}
