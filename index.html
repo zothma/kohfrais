@@ -96,34 +96,34 @@
 
         </header>
 
-        <article class="d-flex flex-column flex-md-row align-items-center mb-5 align-items-md-start">
+        <article class="d-flex flex-column flex-lg-row align-items-center mb-5 align-items-lg-start">
             <!-- Zone de mise en avant -->
-            <div class="d-flex flex-md-column col-11 col-md-4 align-items-center mb-4 text-md-center">
-                <div class="col-3 col-md-12 text-center">
+            <div class="d-flex flex-lg-column col-11 col-lg-4 align-items-center mb-4 text-lg-center">
+                <div class="col-3 col-lg-12 text-center">
                     <img src="assets/icones/map-pin.svg" alt="icone local">
                     <h2>Local</h2>
                 </div>
-                <p class="mb-4 ps-3 pe-md-3">Sagittis urna consequat quam nullam. Nibh id viverra ipsum lobortis
+                <p class="mb-4 ps-3 pe-lg-3">Sagittis urna consequat quam nullam. Nibh id viverra ipsum lobortis
                     adipiscing pretium ac velit.</p>
-                <a href="#" class="d-none d-md-inline btn-lg rounded-pill px-4 text-start">En savoir plus</a>
+                <a href="#" class="d-none d-lg-inline btn-lg rounded-pill px-4 text-start">En savoir plus</a>
             </div>
-            <div class="d-flex flex-md-column col-11 col-md-4 align-items-center mb-4 text-md-center">
-                <div class="col-3 col-md-12 text-center">
+            <div class="d-flex flex-lg-column col-11 col-lg-4 align-items-center mb-4 text-lg-center">
+                <div class="col-3 col-lg-12 text-center">
                     <img src="assets/icones/feuille.svg" alt="icone bio">
                     <h2>Bio</h2>
                 </div>
-                <p class="mb-4 ps-3 pe-md-3">Sagittis urna consequat quam nullam. Nibh id viverra ipsum lobortis
+                <p class="mb-4 ps-3 pe-lg-3">Sagittis urna consequat quam nullam. Nibh id viverra ipsum lobortis
                     adipiscing pretium ac velit.</p>
-                <a href="#" class="d-none d-md-inline btn-lg rounded-pill px-4 text-start">Découvrir</a>
+                <a href="#" class="d-none d-lg-inline btn-lg rounded-pill px-4 text-start">Découvrir</a>
             </div>
-            <div class="d-flex flex-md-column col-11 col-md-4 align-items-center mb-4 text-md-center">
-                <div class="col-3 col-md-12 text-center">
+            <div class="d-flex flex-lg-column col-11 col-lg-4 align-items-center mb-4 text-lg-center">
+                <div class="col-3 col-lg-12 text-center">
                     <img src="assets/icones/checkbox.svg" alt="icone qualité">
                     <h2>Qualité</h2>
                 </div>
-                <p class="mb-4 ps-3 pe-md-3">Sagittis urna consequat quam nullam. Nibh id viverra ipsum lobortis
+                <p class="mb-4 ps-3 pe-lg-3">Sagittis urna consequat quam nullam. Nibh id viverra ipsum lobortis
                     adipiscing pretium ac velit.</p>
-                <a href="#" class="d-none d-md-inline btn-lg rounded-pill px-4 text-start">Nos valeurs</a>
+                <a href="#" class="d-none d-lg-inline btn-lg rounded-pill px-4 text-start">Nos valeurs</a>
             </div>
         </article>
 
@@ -162,13 +162,18 @@
             </div>
         </article>
 
-        <article>
-            <h2>Nous trouver</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac turpis at amet feugiat erat nunc
-                faucibus.
-            </p>
-            <img src="assets/carte_bretagne_accueil.png" alt="Carte de la Bretagne" />
-            <a href="nous_trouver.html">Carte interractive</a>
+        <article class="d-flex flex-column flex-lg-row col-lg-10 offset-lg-1">
+            <div>
+                <h2 class="text-center text-lg-start">Nous trouver</h2>
+                <p class="col-10 offset-1 col-lg-12 offset-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac turpis at amet feugiat erat nunc
+                    faucibus.
+                </p>
+                <a class="btn-lg rounded-pill px-4 offset-7 d-none d-lg-inline-block col-lg-12 offset-lg-0" href="nous_trouver.html">Carte interractive</a>
+            </div>
+            <div>
+                <img id="carte" class="offset-1" src="assets/carte_bretagne_accueil.png" alt="Carte de la Bretagne" />
+                <a class="btn-lg rounded-pill px-4 offset-7 d-lg-none" href="nous_trouver.html">Carte interractive</a>
+            </div>
         </article>
     </main>
 
