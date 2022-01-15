@@ -100,6 +100,44 @@ header + article img {
     background-position: center;
 }
 
+.btn-lg {
+    display: inline-block;
+    background-color: #F27999;
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans SemiBold";
+    width: 250px;
+    height: 50px;
+    position: relative;
+}
+
+.btn-lg::after {
+    content: url("../assets/icones/fleche-droite.svg");
+    display: inline;
+    position: absolute;
+    right: 20px;
+    transition: right 200ms, left 200ms;
+}
+
+.btn-lg:hover {
+    color: black;
+}
+
+.btn-left::after {
+    content: url("../assets/icones/fleche-gauche.svg") !important;
+    right: unset;
+    left: 20px;
+}
+
+.btn-lg:hover::after {
+    right: 10px;
+}
+
+.btn-left:hover::after {
+    right: unset;
+    left: 10px;
+}
+
 /* Point de rupture bootstrap md */
 @media screen and (max-width: 767px) {
     header + article img {
