@@ -1,229 +1,219 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-        crossorigin="" />
-    <style>
-        #map {
-            height: 500px;
-        }
-    </style>
-    <title>Document</title>
-
-    <link rel="stylesheet" href="style/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="style/style.css">
-</head>
-
-<body>
-    <div class="container">
-
-        <header>
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+         crossorigin="" />
+      <style>
+         #map {
+         height: 500px;
+         }
+      </style>
+      <title>Document</title>
+      <link rel="stylesheet" href="style/bootstrap/bootstrap.css">
+      <link rel="stylesheet" href="style/style.css">
+   </head>
+   <body>
+      <div class="container">
+         <header>
             <nav>
-                <a href="index.html"><img src="assets/logo/logo_short.svg" alt="Logo de KOHFRAIS"></a>
-                <p>KOH FRAIS</p>
-                <ul>
-                    <li><a href="#">Présentation</a></li>
-                    <li><a href="#">Nos produits</a></li>
-                    <li><a href="nous_contacter.html">Nous contacter</a></li>
-                    <li><a href="nous_trouver.html">Nous trouver</a></li>
-                </ul>
+               <a href="index.html"><img src="assets/logo/logo_short.svg" alt="Logo de KOHFRAIS"></a>
+               <p>KOH FRAIS</p>
+               <ul>
+                  <li><a href="#">Présentation</a></li>
+                  <li><a href="#">Nos produits</a></li>
+                  <li><a href="nous_contacter.html">Nous contacter</a></li>
+                  <li><a href="nous_trouver.html">Nous trouver</a></li>
+               </ul>
             </nav>
-        </header>
-
-        <main class="col-10 offset-1">
+         </header>
+         <main class="col-10 offset-1">
             <h1>Nous trouver</h1>
             <h2 class="my-3">Points de production</h2>
             <p><strong>Pour les professionnels.</strong> Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Leo eget proin iaculis pulvinar ultrices auctor arcu</p>
-
+               adipiscing elit. Leo eget proin iaculis pulvinar ultrices auctor arcu
+            </p>
             <div class="accordion" id="accordeon-production">
-                <div class="accordion-item">
-                    <!-- carte -->
-                    <!-- en-tete -->
-                    <h5 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <img src="assets/icones/map_rose.svg" alt="point de loc"> Lannion
-                        </button>
-                    </h5>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                            probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <!-- carte -->
-                    <!-- en-tete -->
-                    <h5 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <img src="assets/icones/map_rose.svg" alt="point de loc"> Pontivy
-                        </button>
-                    </h5>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                            probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
+               <div class="accordion-item">
+                  <!-- carte -->
+                  <!-- en-tete -->
+                  <h5 class="accordion-header" id="headingOne">
+                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     <img src="assets/icones/map_rose.svg" alt="point de loc"> Lannion
+                     </button>
+                  </h5>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                     data-bs-parent="#accordionExample">
+                     <div class="accordion-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                        squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                        beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                        lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                        probably haven't heard of them accusamus labore sustainable VHS.
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item">
+                  <!-- carte -->
+                  <!-- en-tete -->
+                  <h5 class="accordion-header" id="headingTwo">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     <img src="assets/icones/map_rose.svg" alt="point de loc"> Pontivy
+                     </button>
+                  </h5>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionExample">
+                     <div class="accordion-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                        squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                        beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                        lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                        probably haven't heard of them accusamus labore sustainable VHS.
+                     </div>
+                  </div>
+               </div>
             </div>
-
             <table class="table table-striped caption-top my-4 overflow-hidden">
-                <caption class="text-center"><strong>Horaires d'ouverture</strong></caption>
-                <tbody>
-                    <tr>
-                        <th>Lundi</th>
-                        <td>8h00-12h00</td>
-                        <td>13h30-19h00</td>
-                    </tr>
-                    <tr>
-                        <th>Mardi</th>
-                        <td>8h00-12h00</td>
-                        <td>13h30-19h00</td>
-                    </tr>
-                    <tr>
-                        <th>Mercredi</th>
-                        <td>8h00-12h00</td>
-                        <td>13h30-19h00</td>
-                    </tr>
-                    <tr>
-                        <th>Jeudi</th>
-                        <td>8h00-12h00</td>
-                        <td>13h30-19h00</td>
-                    </tr>
-                    <tr>
-                        <th>Vendredi</th>
-                        <td>8h00-12h00</td>
-                        <td>13h30-19h00</td>
-                    </tr>
-                </tbody>
+               <caption class="text-center"><strong>Horaires d'ouverture</strong></caption>
+               <tbody>
+                  <tr>
+                     <th>Lundi</th>
+                     <td>8h00-12h00</td>
+                     <td>13h30-19h00</td>
+                  </tr>
+                  <tr>
+                     <th>Mardi</th>
+                     <td>8h00-12h00</td>
+                     <td>13h30-19h00</td>
+                  </tr>
+                  <tr>
+                     <th>Mercredi</th>
+                     <td>8h00-12h00</td>
+                     <td>13h30-19h00</td>
+                  </tr>
+                  <tr>
+                     <th>Jeudi</th>
+                     <td>8h00-12h00</td>
+                     <td>13h30-19h00</td>
+                  </tr>
+                  <tr>
+                     <th>Vendredi</th>
+                     <td>8h00-12h00</td>
+                     <td>13h30-19h00</td>
+                  </tr>
+               </tbody>
             </table>
-
             <h2 class="my-3 overflow-hidden">Points de vente</h2>
             <p>
-                <strong>Pour les particuliers</strong>.
-                Sit fames facilisis morbi faucibus amet cras. Urna lacinia turpis donec interdum pretium blandit
-                volutpat in
-                facilisis.
+               <strong>Pour les particuliers</strong>.
+               Sit fames facilisis morbi faucibus amet cras. Urna lacinia turpis donec interdum pretium blandit
+               volutpat in
+               facilisis.
             </p>
             <div id="map">
-                <!-- Carte interractive -->
+               <!-- Carte interractive -->
             </div>
-
             <div class="accordion" id="accordeon-production">
-                <div class="accordion-item">
-                    <!-- carte -->
-                    <!-- en-tete -->
-                    <h5 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <div class="me-3">
-                                <img width="40" height="40" src="assets/icones/map_rose.svg" alt="point de loc">
-                                <img width="40" height="40" src="assets/icones/map-pin-line.svg"
-                                    alt="point de loc vide">
-                            </div>
-                            Lannion
-                        </button>
-                    </h5>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <!-- corps de la carte -->
-                        <p class="text-center mt-4">1 Route de Plouberze, 22300 Lannion<br>
-                            Tél : 09.09.09.09.09</p>
-
-                        <table class="table table-striped caption-top w-75 mx-auto ">
-                            <caption class="text-center"><strong>Horaires d'ouverture</strong></caption>
-                            <tbody>
-                                <tr>
-                                    <th>Lundi</th>
-                                    <td>8h00-12h00</td>
-                                    <td>13h30-19h00</td>
-                                </tr>
-                                <tr>
-                                    <th>Mardi</th>
-                                    <td>8h00-12h00</td>
-                                    <td>13h30-19h00</td>
-                                </tr>
-                                <tr>
-                                    <th>Mercredi</th>
-                                    <td>8h00-12h00</td>
-                                    <td>13h30-19h00</td>
-                                </tr>
-                                <tr>
-                                    <th>Jeudi</th>
-                                    <td>8h00-12h00</td>
-                                    <td>13h30-19h00</td>
-                                </tr>
-                                <tr>
-                                    <th>Vendredi</th>
-                                    <td>8h00-12h00</td>
-                                    <td>13h30-19h00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+               <div class="accordion-item">
+                  <!-- carte -->
+                  <!-- en-tete -->
+                  <h5 class="accordion-header" id="headingOne">
+                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="me-3">
+                           <img width="40" height="40" src="assets/icones/map_rose.svg" alt="point de loc">
+                           <img width="40" height="40" src="assets/icones/map-pin-line.svg"
+                              alt="point de loc vide">
+                        </div>
+                        Lannion
+                     </button>
+                  </h5>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                     data-bs-parent="#accordionExample">
+                     <!-- corps de la carte -->
+                     <p class="text-center mt-4">1 Route de Plouberze, 22300 Lannion<br>
+                        Tél : 09.09.09.09.09
+                     </p>
+                     <table class="table table-striped caption-top w-75 mx-auto ">
+                        <caption class="text-center"><strong>Horaires d'ouverture</strong></caption>
+                        <tbody>
+                           <tr>
+                              <th>Lundi</th>
+                              <td>8h00-12h00</td>
+                              <td>13h30-19h00</td>
+                           </tr>
+                           <tr>
+                              <th>Mardi</th>
+                              <td>8h00-12h00</td>
+                              <td>13h30-19h00</td>
+                           </tr>
+                           <tr>
+                              <th>Mercredi</th>
+                              <td>8h00-12h00</td>
+                              <td>13h30-19h00</td>
+                           </tr>
+                           <tr>
+                              <th>Jeudi</th>
+                              <td>8h00-12h00</td>
+                              <td>13h30-19h00</td>
+                           </tr>
+                           <tr>
+                              <th>Vendredi</th>
+                              <td>8h00-12h00</td>
+                              <td>13h30-19h00</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
             </div>
-        </main>
-
-        <footer>
-            <div id="div1">
-                <div class="text-center container">
-                    <p>Notre newsletter</p>
-                    <form action="post">
-                        <input type="text" placeholder="Votre e-mail">
-                        <button><img src="assets/icones/envoyer.svg" alt=""></button>
-                        <!-- texte temporaire pour montrer le bouton de validation-->
-                    </form>
-                </div>
+         </main>
+      </div>
+      <!-- fin container-->
+      <footer>
+         <div class="py-2">
+            <div class="text-center container">
+               <p>Notre newsletter</p>
+               <form action="#" class="search">
+                  <input type="text" class="searchInput">
+                  <button class="searchButton">
+                  <img src="assets/icones/envoyer.svg" alt="Logo envoyer">
+                  </button>
+               </form>
             </div>
-
-            <div id="div2">
-                <div class="text-center container">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item"><img src="assets/icones/facebook.svg" alt=""></li>
-                        <li class="nav-item"><img src="assets/icones/instagram.svg" alt=""></li>
-                        <li class="nav-item"><img src="assets/icones/twitter.svg" alt=""></li>
-                    </ul>
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item"><a href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a href="#">Présentation</a></li>
-                        <li class="nav-item"><a href="#">Nos produits</a></li>
-                        <li class="nav-item"><a href="#">Nous contacter</a></li>
-                        <li class="nav-item"><a href="nous_trouver.html">Nous trouver</a></li>
-                    </ul>
-                    <p>© Copyright 2022 - <a href="#">Koh Frais</a> | <a href="#">Mention légale</a> | <a href="#">Plan du
-                            site</a></p>
-                </div>
+         </div>
+         <div class="py-3 mb-3">
+            <div class="text-center container">
+               <ul class="nav justify-content-center">
+                  <li class="nav-item"><img src="assets/icones/facebook.svg" alt=""></li>
+                  <li class="nav-item"><img src="assets/icones/instagram.svg" alt=""></li>
+                  <li class="nav-item"><img src="assets/icones/twitter.svg" alt=""></li>
+               </ul>
+               <ul class="nav justify-content-center">
+                  <li class="nav-item"><a href="index.html">Accueil</a></li>
+                  <li class="nav-item"><a href="#">Présentation</a></li>
+                  <li class="nav-item"><a href="#">Nos produits</a></li>
+                  <li class="nav-item"><a href="#">Nous contacter</a></li>
+                  <li class="nav-item"><a href="nous_trouver.html">Nous trouver</a></li>
+               </ul>
+               <p>© Copyright 2022 - <a href="#">Koh Frais</a> | <a href="#">Mention légale</a> | <a href="#">Plan du
+                  site</a>
+               </p>
             </div>
-        </footer>
-    </div>
-
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
-    <script src="script/bretagne_data.js"></script>
-    <script src="script/map.js"></script>
-    <script src="script/bootstrap/bootstrap.bundle.min.js"></script>
-</body>
-
+         </div>
+      </footer>
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+         crossorigin=""></script>
+      <script src="script/bretagne_data.js"></script>
+      <script src="script/map.js"></script>
+      <script src="script/bootstrap/bootstrap.bundle.min.js"></script>
+   </body>
 </html>

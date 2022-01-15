@@ -67,11 +67,11 @@ button:not(.collapsed) div img:last-child {
     display: none;
 }
 
-footer #div1 {
+footer > div:first-child {
     background-color: #F27999;
 }
 
-footer #div2 {
+footer > div:last-child {
     background-color: #FEAAE5;
 }
 
@@ -92,4 +92,35 @@ footer #div2 {
         text-align: center;
         font-size: 3rem;
     }
+}
+
+
+/* FOOTER*/
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInput {
+    background-color: #f4f2f2;
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    width: 50%;
+    margin-right: -3.25rem;
+}
+
+.searchButton {
+    border: none;
+    background-color: #f4f2f2;
+    margin-bottom: 20px;
+}
+
+.searchIcon {
+    height: 2rem;
+    width: 2rem;
+}
+footer input{
+    margin-bottom: 20px;
 }
