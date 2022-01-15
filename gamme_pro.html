@@ -2,29 +2,43 @@
 <html lang="fr">
    <head>
       <meta charset="utf-8">
+      <meta autor="Noah Brohan">
       <link rel="stylesheet" href="style/style.css">
       <link rel="stylesheet" href="style/gamme_pro.css">
       <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css">
       <title>Gamme professionnelle</title>
    </head>
    <body>
+      <header>
+         <!-- Mettre le header-->
+      </header>
       <div class="container">
-         <h1>Gamme professionnelle</h1>
+         <!--File d'arianne-->
+         <nav aria-label="breadcrumb" class="mt-4">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+              <li class="breadcrumb-item"><a href="#">Nos produits</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Gamme professionnelle</li>
+            </ol>
+          </nav>
+         <h1 class="my-3">Gamme professionnelle</h1>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue semper lectus imperdiet elementum imperdiet
             facilisis congue non. Sit vulputate interdum nulla leo egestas.
          </p>
+        <!--Lien interne à la page--> 
          <ul>
             <li><a href="#">Glaces</a></li>
             <li><a href="#">Desserts glacés</a></li>
             <li><a href="#">Produits surgelés</a></li>
          </ul>
          <!-- Section nouveautés et meilleures ventes-->
-         <section>
-            <div class="titre-icon">
+         <section class="py-5 my-5">
+            <div class="titre-icon col-10 offset-1">
                <img src="assets/icones/etoile.svg" alt="étoile" class="icon">
                <h2 class="my-3">Nos nouveautés</h2>
             </div>
-            <div class="d-flex justify-content-between flex-wrap align-items-center my-3">
+            <div class="d-flex justify-content-between my-3 col-10 offset-1 ">
+               <!--Modèle de carte-->
                <figure>
                   <img src="image/coupe_individuelle.jpg" alt="Coupe de glaces">
                   <div class="overlay">
@@ -36,11 +50,9 @@
                </figure>
                <figure>
                   <div class="absolute">
-                     <div class="icon-wrapper">
                         <div class="rounded-circle circle">
-                           <img src="assets/icones/ermine.svg" alt="Logo produit breton" class="icon">
+                           <img src="assets/icones/ermine.svg" alt="Logo produit breton" class="icon" title="Le produit breton">
                         </div>
-                     </div>
                   </div>
                   <img src="image/coupe_individuelle.jpg" alt="Coupe de glaces">
                   <div class="overlay">
@@ -51,11 +63,11 @@
                   </div>
                </figure>
             </div>
-            <div class="titre-icon">
+            <div class="titre-icon col-10 offset-1">
                <img src="assets/icones/line-chart-fill.svg" alt="icon" class="icon">
                <h2 class="my-3">Meilleurs ventes</h2>
             </div>
-            <div class="d-flex justify-content-between flex-wrap align-items-center my-3">
+            <div class="d-flex justify-content-between flex-wrap align-items-center my-3 col-10 offset-1">
                <figure>
                   <img src="image/coupe_individuelle.jpg" alt="Coupe de glaces">
                   <div class="overlay">
@@ -67,11 +79,10 @@
                </figure>
                <figure>
                   <div class="absolute">
-                     <div class="icon-wrapper">
+                     
                         <div class="rounded-circle circle">
-                           <img src="assets/icones/feuille.svg" alt="Logo produit breton" class="icon">
+                           <img src="assets/icones/feuille.svg" alt="Logo produit biologique" class="icon" title="Logo produit biologique">
                         </div>
-                     </div>
                   </div>
                   <img src="image/coupe_individuelle.jpg" alt="Coupe de glaces">
                   <div class="overlay">
@@ -84,17 +95,16 @@
             </div>
          </section>
          <!-- Section des produits de type "Glaces"-->
-         <section>
-            <h2 class="mt-4 mb-3">Glaces</h2>
+         <section class="col-10 offset-1">
+            <h2 class="my-4">Glaces</h2>
             <div class="d-flex justify-content-between flex-wrap align-items-center">
                <figure>
                   <img src="image/coupe_individuelle.jpg" alt="Coupe de glaces">
                   <div class="absolute">
-                     <div class="icon-wrapper">
+                     
                         <div class="rounded-circle circle">
-                           <img src="assets/icones/feuille.svg" alt="Logo produit breton" class="icon">
+                           <img src="assets/icones/feuille.svg" alt="Logo produit feuille" class="icon" title="Logo produit feuille">
                         </div>
-                     </div>
                   </div>
                   <div class="overlay">
                      <figcaption>
@@ -112,7 +122,7 @@
                      </figcaption>
                   </div>
                </figure>
-               <figure>
+               <figure class="my-4">
                   <img src="image/coupe_individuelle.jpg" alt="Coupe de glaces">
                   <div class="overlay">
                      <figcaption>
@@ -121,13 +131,12 @@
                      </figcaption>
                   </div>
                </figure>
-               <figure>
+               <figure class="my-4">
                   <div class="absolute">
-                     <div class="icon-wrapper">
+                     
                         <div class="rounded-circle circle">
-                           <img src="assets/icones/ermine.svg" alt="Logo produit breton" class="icon">
+                           <img src="assets/icones/ermine.svg" alt="Logo produit breton" class="icon" title="Logo produit breton">
                         </div>
-                     </div>
                   </div>
                   <img src="image/coupe_individuelle.jpg" alt="Coupe de glaces">
                   <div class="overlay">
@@ -140,10 +149,10 @@
             </div>
          </section>
          <!-- Section des produits de type "Desserts glacés"-->
-         <section>
+         <section class="col-10 offset-1 my-4">
             <h2>Desserts glacés</h2>
             <div class="d-flex justify-content-between flex-wrap align-items-center">
-               <figure>
+               <figure class="my-4">
                   <img src="image/coupe_individuelle.jpg" alt="Coupe de glaces">
                   <div class="overlay">
                      <figcaption>
@@ -155,18 +164,13 @@
                <figure>
                   <img src="image/coupe_individuelle.jpg" alt="Coupe de glaces">
                   <div class="absolute">
-                     <div class="icon-wrapper">
+                     
                         <div class="rounded-circle circle">
-                           <img src="assets/icones/ermine.svg" alt="Logo produit breton" class="icon">
+                           <img src="assets/icones/ermine.svg" alt="Logo produit breton" class="icon" title="Logo produit breton">
                         </div>
-                     </div>
-                  </div>
-                  <div class="absolute">
-                     <div class="icon-wrapper">
                         <div class="rounded-circle circle">
-                           <img src="assets/icones/feuille.svg" alt="Logo produit breton" class="icon">
+                           <img src="assets/icones/feuille.svg" alt="Logo produit biologique" class="icon" title="Logo produit biologique">
                         </div>
-                     </div>
                   </div>
                   <div class="overlay">
                      <figcaption>
@@ -178,17 +182,16 @@
             </div>
          </section>
          <!-- Section des produits surgelés -->
-         <section>
+         <section class="col-10 offset-1">
             <h2>Produits surgelés</h2>
             <div class="d-flex justify-content-between flex-wrap align-items-center">
-               <figure>
+               <figure class="my-4">
                   <img src="image/coupe_individuelle.jpg" alt="Coupe de glaces">
                   <div class="absolute">
-                     <div class="icon-wrapper">
+                     
                         <div class="rounded-circle circle">
-                           <img src="assets/icones/feuille.svg" alt="Logo produit breton" class="icon">
+                           <img src="assets/icones/feuille.svg" alt="Logo produit biologique" class="icon" title="Logo produit biologique">
                         </div>
-                     </div>
                   </div>
                   <div class="overlay">
                      <figcaption>
@@ -197,21 +200,20 @@
                      </figcaption>
                   </div>
                </figure>
-               <figure>
+               <figure class="my-4">
                   <img src="image/coupe_individuelle.jpg" alt="Coupe de glaces">
                   <div class="absolute">
-                     <div class="icon-wrapper">
                         <div class="rounded-circle circle">
-                           <img src="assets/icones/ermine.svg" alt="Logo produit breton" class="icon">
+                           <img src="assets/icones/ermine.svg" alt="Logo produit breton" class="icon" title="Logo produit breton">
                         </div>
-                     </div>
+                        <div class="rounded-circle circle">
+                           <img src="assets/icones/ermine.svg" alt="Logo produit breton" class="icon" title="Logo produit breton">
+                        </div>
                   </div>
                   <div class="absolute">
-                     <div class="icon-wrapper">
                         <div class="rounded-circle circle">
-                           <img src="assets/icones/feuille.svg" alt="Logo produit breton" class="icon">
+                           <img src="assets/icones/feuille.svg" alt="Logo produit biologique" class="icon" title="Logo produit biologique">
                         </div>
-                     </div>
                   </div>
                   <div class="overlay">
                      <figcaption>
@@ -220,14 +222,12 @@
                      </figcaption>
                   </div>
                </figure>
-               <figure>
+               <figure class="my-4">
                   <img src="image/coupe_individuelle.jpg" alt="Coupe de glaces">
                   <div class="absolute">
-                     <div class="icon-wrapper">
                         <div class="rounded-circle circle">
-                           <img src="assets/icones/feuille.svg" alt="Logo produit breton" class="icon">
+                           <img src="assets/icones/feuille.svg" alt="Logo produit biologique" class="icon" title="Logo produit biologique">
                         </div>
-                     </div>
                   </div>
                   <div class="overlay">
                      <figcaption>
@@ -239,5 +239,8 @@
             </div>
          </section>
       </div>
+      <footer>
+         <!-- Mettre le footer -->
+      </footer>
    </body>
 </html>
