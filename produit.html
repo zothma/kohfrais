@@ -9,85 +9,119 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <header>
-            <nav>
-                <a href="index.html"><img src="assets/logo/logo_short.svg" alt="Logo de KOHFRAIS"></a>
-                <p>KOH FRAIS</p>
-                <ul>
-                    <li><a href="#">Présentation</a></li>
-                    <li><a href="#">Nos produits</a></li>
-                    <li><a href="#">Nous contacter</a></li>
-                    <li><a href="nous_trouver.html">Nous trouver</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <nav>
+            <a href="index.html"><img src="assets/logo/logo_short.svg" alt="Logo de KOHFRAIS"></a>
+            <p>KOH FRAIS</p>
+            <ul>
+                <li><a href="#">Présentation</a></li>
+                <li><a href="#">Nos produits</a></li>
+                <li><a href="#">Nous contacter</a></li>
+                <li><a href="nous_trouver.html">Nous trouver</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <div class="container">
         <main>
-            <h1>Notre glace à la vanille</h1>
-            <figure>
-                <img src="image/coupe_individuelle.jpg" alt="" title="" />
-                <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue semper lectus imperdiet
-                    elementum imperdiet facilisis congue non. Sit vulputate interdum nulla leo egestas.</figcaption>
-            </figure>
-            <h2>Disponibilité</h2>
-            <p>Disponible en bac de <strong>1 littre</strong> et de <strong>2 litres</strong></p>
-            <h2>Labels</h2>
-            <figure>
-                <img src="image/logo_bretagne.png" alt="" title="" />
-                <figcaption>Ingrédient produits en Bretagne</figcaption>
-            </figure>
-            <figure>
-                <img src="image/logo_ab.jpg" alt="" title="" />
-                <figcaption>Ingredients issus de l'agriculture biologique</figcaption>
-            </figure>
-            <h2>Ingredients</h2>
-            <figure>
-                <img src="image/lait.jpeg" alt="" title="" />
-                <figcaption>Lait</figcaption>
-            </figure>
-            <figure>
-                <img src="image/oeufs.jpeg" alt="" title="" />
-                <figcaption>Oeuf</figcaption>
-            </figure>
-            <figure>
-                <img src="image/sucre.jpg" alt="" title="" />
-                <figcaption>Sucre</figcaption>
-            </figure>
-            <figure>
-                <img src="image/vanille_sucre.webp" alt="" title="" />
-                <figcaption>Vanille</figcaption>
-            </figure>
+            <!--File d'arianne-->
+            <nav aria-label="breadcrumb" class="mt-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                    <li class="breadcrumb-item"><a href="#">Nos produits</a></li>
+                    <li class="breadcrumb-item"><a href="gamme_pro.html">Gamme professionnelle</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Glace à la vanille</li>
+                </ol>
+            </nav>
+
+            <div>
+                <h1>Notre glace à la vanille</h1>
+                <div class="image-principale">
+                    <figure class="text-center">
+                        <img src="image/coupe_individuelle.jpg" alt="" title="" class="mb-3" />
+                        <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue semper lectus
+                            imperdiet elementum imperdiet facilisis congue non. Sit vulputate interdum nulla leo egestas.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="d-flex flex-sm-column flex-column flex-lg-row justify-content-center ">
+                <div class="d-flex flex-column mb-3 col-12 col-lg-6 order-1 order-lg-0">
+                    <div>
+                        <h2 class="mb-4">Disponibilité</h2>
+                        <p class="mb-4">Disponible en bac de <strong>1 litre</strong> et de <strong>2 litres</strong></p>
+                        <h2 class="mb-4">Labels</h2>
+                        <figure class="mb-4">
+                            <img width="100" height="100" src="image/logo_bretagne.png" alt="" title="" class="contain" />
+                            <figcaption class="d-inline ms-4">Ingrédient produits en Bretagne</figcaption>
+                        </figure>
+                        <figure>
+                            <img width="100" height="100" src="image/logo_ab.jpg" alt="" title="" class="contain" />
+                            <figcaption class="d-inline ms-4">Ingredients issus de l'agriculture biologique</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h2 class="mb-4">Ingredients</h2>
+                    <div class="text-center">
+                        <div class="d-flex justify-content-around mb-3">
+                            <figure>
+                                <img width="150" height="150" class="rounded-circle mb-2" src="image/lait.jpeg" alt=""
+                                    title="" />
+                                <figcaption>Lait</figcaption>
+                            </figure>
+                            <figure>
+                                <img width="150" height="150" class="rounded-circle mb-2" src="image/oeufs.jpeg" alt=""
+                                    title="" />
+                                <figcaption>Oeuf</figcaption>
+                            </figure>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <figure>
+                                <img width="150" height="150" class="rounded-circle mb-2" src="image/sucre.jpg" alt=""
+                                    title="" />
+                                <figcaption>Sucre</figcaption>
+                            </figure>
+                            <figure>
+                                <img width="150" height="150" class="rounded-circle mb-2" src="image/vanille_sucre.webp"
+                                    alt="" title="" />
+                                <figcaption>Vanille</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
-
-        <footer>
-            <div>
-                <p>Notre newsletter</p>
-                <form action="post">
-                    <input type="text" placeholder="Votre e-mail">
-                    <button><img src="assets/icones/envoyer.svg" alt=""></button>
-                    <!-- texte temporaire pour montrer le bouton de validation-->
-                </form>
-            </div>
-
-            <div>
-                <ul>
-                    <li><img src="assets/icones/facebook.svg" alt=""></li>
-                    <li><img src="assets/icones/instagram.svg" alt=""></li>
-                    <li><img src="assets/icones/twitter.svg" alt=""></li>
-                </ul>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="#">Présentation</a></li>
-                    <li><a href="#">Nos produits</a></li>
-                    <li><a href="#">Nous contacter</a></li>
-                    <li><a href="nous_trouver.html">Nous trouver</a></li>
-                </ul>
-                <p>© Copyright 2022 - <a href="#">Koh Frais</a> | <a href="#">Mention légale</a> | <a href="#">Plan du
-                        site</a></p>
-            </div>
-        </footer>
     </div>
+
+    <footer>
+        <div>
+            <p>Notre newsletter</p>
+            <form action="post">
+                <input type="text" placeholder="Votre e-mail">
+                <button><img src="assets/icones/envoyer.svg" alt=""></button>
+                <!-- texte temporaire pour montrer le bouton de validation-->
+            </form>
+        </div>
+
+        <div>
+            <ul>
+                <li><img src="assets/icones/facebook.svg" alt=""></li>
+                <li><img src="assets/icones/instagram.svg" alt=""></li>
+                <li><img src="assets/icones/twitter.svg" alt=""></li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Présentation</a></li>
+                <li><a href="#">Nos produits</a></li>
+                <li><a href="#">Nous contacter</a></li>
+                <li><a href="nous_trouver.html">Nous trouver</a></li>
+            </ul>
+            <p>© Copyright 2022 - <a href="#">Koh Frais</a> | <a href="#">Mention légale</a> | <a href="#">Plan du
+                    site</a></p>
+        </div>
+    </footer>
 </body>
 
 </html>
