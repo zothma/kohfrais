@@ -230,3 +230,78 @@ h2 {
         content: none !important;
     }
 }
+caption {
+    color: black;
+}
+
+.accordion-button span {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.accordion-button span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.accordion-button.collapsed span img:first-child {
+    display: none;
+}
+
+.accordion-button:not(.collapsed) span img:last-child {
+    display: none;
+}
+
+.btn-success {
+    background-color: #F27999;
+    border-color: #F27999;
+}
+@media screen and (max-width: 991px) {
+    table.w-75 {
+        width: 100%!important;
+    }
+    main h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+
+/* FOOTER*/
+body > footer > div:first-child {
+    background-color: #F27999;
+}
+
+body > footer > div:last-child {
+    background-color: #FEAAE5;
+}
+
+body > footer .nav-item {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+body > footer form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+body > footer input {
+    background-color: #f4f2f2;
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    margin-right: -3.25rem;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+body > footer button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-bottom: 20px;
+}
