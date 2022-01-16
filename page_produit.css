@@ -20,3 +20,10 @@ img {
 }
 
 
+img.contain {
+    object-fit: contain;
+}
+
+figcaption {
+    font-family: "Open Sans Regular";
+}
