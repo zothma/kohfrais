@@ -47,23 +47,23 @@ caption {
     color: black;
 }
 
-.accordion-button div {
+.accordion-button span {
     position: relative;
     width: 40px;
     height: 40px;
 }
 
-.accordion-button div img {
+.accordion-button span img {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.accordion-button.collapsed div img:first-child {
+.accordion-button.collapsed span img:first-child {
     display: none;
 }
 
-.accordion-button:not(.collapsed) div img:last-child {
+.accordion-button:not(.collapsed) span img:last-child {
     display: none;
 }
 
