@@ -25,6 +25,8 @@
 body {
     font-family: "Open Sans Light", sans-serif;
     font-size: 1.5rem;
+    /* Laisser la place à la barre de navigation */
+    padding-top: 80px;
 }
 
 strong, em {
@@ -438,11 +440,13 @@ img.contain {
 /* Barre de navigation */
 body > header {
     /* sticky ne fait pas sortir le bloc du flux et garde sa taille */
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    height: 80px;
     top: 0;
     border-bottom: 1px solid rgba(0, 0, 0, .25);
     background-color: white;
-    z-index: 2;
+    z-index: 3;
 }
 
 body > header .navbar-brand {
@@ -465,6 +469,7 @@ body > header .nav-link {
     body > header .nav-item {
         height: 80px;
         border-bottom: 2px solid rgba(0, 0, 0, .25);
+        background-color: white;
     }
 
     body > header .nav-link {
