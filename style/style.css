@@ -234,6 +234,10 @@ caption {
     color: black;
 }
 
+.accordion-button {
+    font-size: 1.5rem;
+}
+
 .accordion-button span {
     position: relative;
     width: 40px;
@@ -305,6 +309,7 @@ body > footer button {
     background-color: #f4f2f2;
     margin-bottom: 20px;
 }
+
 figure a img{
     width: 100%;
     height: 100%;
