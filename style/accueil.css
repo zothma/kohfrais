@@ -173,3 +173,9 @@ header + article img {
         width: 75%;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .btn-lg::after, .btn-left::after {
+        content: none !important;
+    }
+}
