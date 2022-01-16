@@ -47,37 +47,24 @@ caption {
     color: black;
 }
 
-button div {
+.accordion-button div {
     position: relative;
     width: 40px;
     height: 40px;
 }
 
-button div img {
+.accordion-button div img {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-button.collapsed div img:first-child {
+.accordion-button.collapsed div img:first-child {
     display: none;
 }
 
-button:not(.collapsed) div img:last-child {
+.accordion-button:not(.collapsed) div img:last-child {
     display: none;
-}
-
-footer > div:first-child {
-    background-color: #F27999;
-}
-
-footer > div:last-child {
-    background-color: #FEAAE5;
-}
-
-.nav-item {
-    padding-left: 4px;
-    padding-right: 4px;
 }
 
 .btn-success {
@@ -96,32 +83,38 @@ footer > div:last-child {
 
 
 /* FOOTER*/
-.search {
+body > footer > div:first-child {
+    background-color: #F27999;
+}
+
+body > footer > div:last-child {
+    background-color: #FEAAE5;
+}
+
+body > footer .nav-item {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+body > footer form{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 40px;
 }
 
-.searchInput {
+body > footer input {
     background-color: #f4f2f2;
     border: none;
     padding: .7rem 2rem;
     border-radius: 100px;
     margin-right: -3.25rem;
     width: 300px;
-}
-
-.searchButton {
-    border: none;
-    background-color: #f4f2f2;
     margin-bottom: 20px;
 }
 
-.searchIcon {
-    height: 2rem;
-    width: 2rem;
-}
-footer input{
+body > footer button {
+    border: none;
+    background-color: #f4f2f2;
     margin-bottom: 20px;
 }
