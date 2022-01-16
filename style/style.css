@@ -44,6 +44,14 @@ h2 {
 }
 
 /* Barre de navigation */
+body > header {
+    /* sticky ne fait pas sortir le bloc du flux et garde sa taille */
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+    background-color: white;
+}
+
 body > header .navbar-brand {
     font-size: 36px;
     color: black;
