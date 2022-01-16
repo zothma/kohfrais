@@ -7,7 +7,7 @@
          crossorigin="" />
       <style>
          #map {
-         height: 500px;
+            height: 500px;
          }
       </style>
       <title>Document</title>
@@ -15,19 +15,20 @@
       <link rel="stylesheet" href="style/style.css">
    </head>
    <body>
+      <header>
+         <nav>
+            <a href="index.html"><img src="assets/logo/logo_short.svg" alt="Logo de KOHFRAIS"></a>
+            <p>KOH FRAIS</p>
+            <ul>
+               <li><a href="#">Présentation</a></li>
+               <li><a href="#">Nos produits</a></li>
+               <li><a href="nous_contacter.html">Nous contacter</a></li>
+               <li><a href="nous_trouver.html">Nous trouver</a></li>
+            </ul>
+         </nav>
+      </header>
+
       <div class="container">
-         <header>
-            <nav>
-               <a href="index.html"><img src="assets/logo/logo_short.svg" alt="Logo de KOHFRAIS"></a>
-               <p>KOH FRAIS</p>
-               <ul>
-                  <li><a href="#">Présentation</a></li>
-                  <li><a href="#">Nos produits</a></li>
-                  <li><a href="nous_contacter.html">Nous contacter</a></li>
-                  <li><a href="nous_trouver.html">Nous trouver</a></li>
-               </ul>
-            </nav>
-         </header>
          <main class="col-10 offset-1">
             <h1>Nous trouver</h1>
             <h2 class="my-3">Points de production</h2>
@@ -36,11 +37,10 @@
             </p>
             <div class="accordion" id="accordeon-production">
                <div class="accordion-item">
-                  <!-- carte -->
                   <!-- en-tete -->
-                  <h5 class="accordion-header" id="headingOne">
+                  <h5 class="accordion-header" id="en-tete-lannion">
                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        data-bs-target="#carte-lannion" aria-expanded="true" aria-controls="carte-lannion">
                         <div class="me-3">
                            <img width="40" height="40" src="assets/icones/map_rose.svg" alt="point de loc">
                            <img width="40" height="40" src="assets/icones/map-pin-line.svg"
@@ -49,8 +49,9 @@
                         Lannion
                      </button>
                   </h5>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                     data-bs-parent="#accordionExample">
+                  <!-- carte -->
+                  <div id="carte-lannion" class="accordion-collapse collapse show" aria-labelledby="en-tete-lannion"
+                     data-bs-parent="#accordeon-production">
                      <div class="accordion-body">
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                         squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
@@ -65,9 +66,9 @@
                <div class="accordion-item">
                   <!-- carte -->
                   <!-- en-tete -->
-                  <h5 class="accordion-header" id="headingTwo">
+                  <h5 class="accordion-header" id="en-tete-pontivy">
                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        data-bs-target="#carte-pontivy" aria-expanded="false" aria-controls="carte-pontivy">
                         <div class="me-3">
                            <img width="40" height="40" src="assets/icones/map_rose.svg" alt="point de loc">
                            <img width="40" height="40" src="assets/icones/map-pin-line.svg"
@@ -76,8 +77,8 @@
                         Pontivy
                      </button>
                   </h5>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                     data-bs-parent="#accordionExample">
+                  <div id="carte-pontivy" class="accordion-collapse collapse" aria-labelledby="en-tete-pontivy"
+                     data-bs-parent="#accordeon-production">
                      <div class="accordion-body">
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                         squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
@@ -130,13 +131,12 @@
             <div id="map">
                <!-- Carte interractive -->
             </div>
-            <div class="accordion mb-3" id="accordeon-production">
+            <div class="accordion mb-3" id="accordeon-vente">
                <div class="accordion-item">
-                  <!-- carte -->
                   <!-- en-tete -->
-                  <h5 class="accordion-header" id="headingOne">
+                  <h5 class="accordion-header" id="en-tete-1">
                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        data-bs-target="#carte-1" aria-expanded="true" aria-controls="carte-1">
                         <div class="me-3">
                            <img width="40" height="40" src="assets/icones/map_rose.svg" alt="point de loc">
                            <img width="40" height="40" src="assets/icones/map-pin-line.svg"
@@ -145,8 +145,9 @@
                         Lannion
                      </button>
                   </h5>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                     data-bs-parent="#accordionExample">
+                  <!-- carte -->
+                  <div id="carte-1" class="accordion-collapse collapse show" aria-labelledby="en-tete-1"
+                     data-bs-parent="#accordeon-vente">
                      <!-- corps de la carte -->
                      <p class="text-center mt-4">1 Route de Plouberze, 22300 Lannion<br>
                         Tél : 09.09.09.09.09
