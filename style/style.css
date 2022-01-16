@@ -435,3 +435,39 @@ img {
 img.contain {
     object-fit: contain;
 }
+/* Barre de navigation */
+body > header {
+    /* sticky ne fait pas sortir le bloc du flux et garde sa taille */
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+    background-color: white;
+    z-index: 2;
+}
+
+body > header .navbar-brand {
+    font-size: 36px;
+    color: black;
+    font-family: "Open Sans Regular", sans-serif;
+}
+
+
+body > header .nav-link {
+    display: inline-block;
+    font-size: 20px;
+    color: black;
+    font-family: "Open Sans Regular", sans-serif;
+    height: 100%;
+    line-height: 60px;
+}
+
+@media screen and (max-width: 991px) {
+    body > header .nav-item {
+        height: 80px;
+        border-bottom: 2px solid rgba(0, 0, 0, .25);
+    }
+
+    body > header .nav-link {
+        margin: auto 30px;
+    }
+}
