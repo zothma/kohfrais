@@ -476,3 +476,7 @@ body > header .nav-link {
         margin: auto 30px;
     }
 }
+
+#map {
+    z-index: 2;
+}
