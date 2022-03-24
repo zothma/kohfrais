@@ -6,6 +6,8 @@ Projet réalisé en équipe dans le cadre de ma formation, l'objectif était de 
 
 ![Capture d'écran de la page d'accueil](rendu/Capture.png)
 
+Lien du site : [Projet KohFrais](https://zothma.github.io/projects/kohfrais/index.html)
+
 Le dossier `rendu` contient les documents complémentaires que nous avons apportés à chaque étape du projet. Il s'agit :
  - d'une arborescence réalisée sur [Gloomaps](https://www.gloomaps.com/)
  - d'une charte graphique réalisée avec [Canva](https://www.canva.com/)
