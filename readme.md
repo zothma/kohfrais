@@ -15,6 +15,10 @@ Le dossier `rendu` contient les documents complémentaires que nous avons apport
 
 Le résultat nous aura valu la meilleure note de la promotion.
 
+## Technologies
+
+Le site Web a été développé avec l'aide des langages **HTML** et **CSS**, accompagnés du **[Framework Bootstrap](https://getbootstrap.com/)**. Les données cartographiques récupérées ont été générées par un script **Python** à partir d'un **CSV des données sur les villes bretonnes**, dont les coordonnées géographiques ont été extraites. Enfin, la carte interractive utilise la bibliothèque JavaScript **[Leaflet](https://leafletjs.com/)**
+
 ## Précisions
 
 Le projet, tel que proposé par nos enseignants, devait avant tout nous permettre de maîtriser l'extraction des besoins du client et leur implémentation. Ainsi, seules 4 des pages imaginées nous ont été demandées, qu'il s'agisse du maquettage ou du développement. Les délais imposés ne permettaient par ailleurs pas un travail plus conséquent.
